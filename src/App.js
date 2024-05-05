@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar.js';
+import SingleSelectDropdown from './components/singleselectdropdown.js'
+import JobList from './components/joblist.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <>
+    <Navbar/>
+    
+    <div className="container">
+      <div className='div-box'>
+        We, at JobHub, are creating a go-to hub for uncovering the real issues candidates should be aware of before joining a company. Access 150+ company reviews here
+      </div>
+      <h3 style={{textAlign:'center'}}>
+       <u style={{color:'blue'}}> 
+        Search Jobs
+       </u>
+      </h3>
+      {/* <SingleSelectDropdown/> */}
+      <JobList/>
     </div>
+  </>
   );
 }
 

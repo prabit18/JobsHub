@@ -1,0 +1,37 @@
+/* JobCard.css */
+.job-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.job-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-location {
+    font-style: italic;
+}
+
+.job-description {
+    margin: 10px 0;
+}
+
+.apply-button {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    background-color: #45a049;
+}
